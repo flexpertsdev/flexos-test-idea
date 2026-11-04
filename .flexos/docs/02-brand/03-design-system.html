@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Design system</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root { --forest: #2F5D50; --sunny: #F2A541; --cream: #FBF6EC; --ink: #1F2A27; --line: #E8E0CF; }
+  * { box-sizing: border-box; margin: 0; }
+  body { font-family: Inter, system-ui, sans-serif; background: var(--cream); color: var(--ink); padding: 40px 20px 64px; }
+  main { max-width: 880px; margin: 0 auto; display: grid; gap: 36px; }
+  h1, h2, h3 { font-family: Fraunces, serif; font-weight: 600; color: var(--forest); }
+  .label { font-size: 12px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: #7a7466; margin-bottom: 12px; }
+  .note { font-size: 13px; color: #7a7466; margin-top: 8px; }
+  .colours { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+  .sw { border-radius: 14px; height: 96px; padding: 12px; display: flex; flex-direction: column; justify-content: flex-end; font-size: 13px; border: 1px solid var(--line); }
+  .sw b { font-weight: 600; }
+  .type h1 { font-size: 44px; line-height: 1.1; }
+  .type h2 { font-size: 30px; margin-top: 10px; }
+  .type h3 { font-size: 21px; margin-top: 10px; }
+  .type p { font-size: 17px; line-height: 1.6; margin-top: 10px; max-width: 60ch; }
+  .row { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+  .btn { font: 600 15px Inter, sans-serif; border-radius: 999px; padding: 12px 22px; border: 2px solid var(--forest); }
+  .primary { background: var(--forest); color: var(--cream); }
+  .secondary { background: transparent; color: var(--forest); }
+  .tag { background: var(--sunny); color: var(--ink); font-size: 13px; font-weight: 600; border-radius: 999px; padding: 5px 12px; }
+  .card { background: #fff; border-radius: 18px; padding: 22px; max-width: 360px; box-shadow: 0 1px 2px rgba(31,42,39,.06), 0 8px 24px rgba(31,42,39,.06); }
+  .card p { margin-top: 6px; line-height: 1.5; }
+  .price { font-family: Fraunces, serif; font-size: 28px; color: var(--forest); margin-top: 12px; }
+  .logo { display: flex; align-items: center; gap: 12px; }
+  .logo span { font-family: Fraunces, serif; font-weight: 700; font-size: 26px; color: var(--forest); }
+  @media (max-width: 640px) { .colours { grid-template-columns: repeat(2, 1fr); } .type h1 { font-size: 34px; } }
+</style>
+</head>
+<body>
+<main>
+  <section>
+    <div class="label">Logo (name not chosen yet)</div>
+    <div class="logo">
+      <svg width="48" height="48" viewBox="0 0 42 42" aria-hidden="true"><path d="M4 38V18A14 14 0 0 1 18 4h20" fill="none" stroke="#2F5D50" stroke-width="6" stroke-linecap="round"/><circle cx="27" cy="27" r="5" fill="#F2A541"/><circle cx="19" cy="20" r="2.6" fill="#F2A541"/><circle cx="25" cy="16.5" r="2.6" fill="#F2A541"/><circle cx="31" cy="18" r="2.6" fill="#F2A541"/><circle cx="34" cy="23.5" r="2.6" fill="#F2A541"/></svg>
+      <span>Round the Corner Pets</span>
+    </div>
+  </section>
+  <section>
+    <div class="label">Colours (chosen)</div>
+    <div class="colours">
+      <div class="sw" style="background:#2F5D50;color:#FBF6EC"><b>Forest</b>#2F5D50</div>
+      <div class="sw" style="background:#F2A541"><b>Sunny</b>#F2A541</div>
+      <div class="sw" style="background:#FBF6EC"><b>Cream</b>#FBF6EC</div>
+      <div class="sw" style="background:#1F2A27;color:#FBF6EC"><b>Ink</b>#1F2A27</div>
+    </div>
+  </section>
+  <section class="type">
+    <div class="label">Type (Fraunces and Inter, to confirm)</div>
+    <h1>Your local dog walker, just round the corner.</h1>
+    <h2>Walks and home visits in Bromley</h2>
+    <h3>Solo walk, 1 hour</h3>
+    <p>Friendly walks and home visits from a neighbour your pets will know by name. A photo and a note after every visit.</p>
+  </section>
+  <section>
+    <div class="label">Buttons and tags</div>
+    <div class="row">
+      <button class="btn primary">Book a meet and greet</button>
+      <button class="btn secondary">See prices</button>
+      <span class="tag">Insured and DBS checked</span>
+    </div>
+  </section>
+  <section>
+    <div class="label">A card</div>
+    <div class="card">
+      <h3>Group walk, 1 hour</h3>
+      <p>Up to four friendly dogs, picked up and dropped home. Local parks, never a van.</p>
+      <div class="price">£16</div>
+    </div>
+    <p class="note">The price is a suggestion until it is agreed.</p>
+  </section>
+</main>
+</body>
+</html>

@@ -10,16 +10,10 @@ related: [.flexos/spaces/20261104-dog-walking-launch/01-brand/]
 Warm, neighbourly and trustworthy: a local person your pets know by name, just round the corner, never a big firm
 (guess, from the look the owner liked).
 
-## Colours (chosen)
-| Name | Colour | Used for |
-|---|---|---|
-| Forest | `#2F5D50` | the name, buttons, headings |
-| Sunny | `#F2A541` | the paw, highlights, one thing to notice per page |
-| Cream | `#FBF6EC` | backgrounds |
-| Ink | `#1F2A27` | text |
-
-## Fonts
-Fraunces for headings, Inter for text (guess: they came with these colours; not chosen yet).
-
 ## Name and line
-Not chosen yet. The name that came with these colours is **Round the Corner Pets**, line "Just round the corner."
+Not chosen yet. The name that came with the chosen colours is **Round the Corner Pets**, line "Just round the corner."
+The three brands it was picked from are on the board in the space's brand topic.
+
+## In this folder
+- `02-style-guide.md`: the colours (chosen), the fonts, the logo and how we write.
+- `03-design-system.html`: the same, drawn: colours, type, buttons and a card.
