@@ -1,9 +1,9 @@
 ---
 name: Starting the dog walking business, to-do
-details: What is left to settle before the website can be drawn
+details: What is left to settle before the website goes live
 type: space
 status: active
-related: [.flexos/docs/01-project/, .flexos/docs/02-brand/, .flexos/docs/plans/launch.md]
+related: [.flexos/docs/01-project/, .flexos/docs/02-brand/, .flexos/docs/plans/launch.md, .flexos/apps/web/]
 ---
 
 - [x] Write down the business as it stands (overview, fact sheet)
@@ -15,5 +15,9 @@ related: [.flexos/docs/01-project/, .flexos/docs/02-brand/, .flexos/docs/plans/l
 - [x] Pick the colours: brand 1's (forest, sunny, cream)
 - [ ] Pick the name and the line
 - [ ] Check the suggested services and prices
-- [ ] The look of the website (from the brand)
-- [ ] Draw the home page
+- [x] The look of the website (from the brand)
+- [x] Draw the home page
+- [ ] The owner's yes to the home page
+- [ ] Build the home page and put it live
+- [ ] Where meet and greet requests go
+- [ ] Two photos: on a walk, and a friendly face

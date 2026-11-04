@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Round the Corner Pets · Dog walking and pet visits in Bromley</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root { --forest: #2F5D50; --forest-2: #264d42; --sunny: #F2A541; --cream: #FBF6EC; --ink: #1F2A27; --muted: #5d6662; --line: #E8E0CF; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: Inter, system-ui, sans-serif; background: var(--cream); color: var(--ink); line-height: 1.55; }
+  a { color: inherit; text-decoration: none; }
+  h1, h2, h3 { font-family: Fraunces, serif; font-weight: 600; color: var(--forest); line-height: 1.12; }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
+  .btn { display: inline-block; font-weight: 600; font-size: 15px; border-radius: 999px; padding: 13px 24px; border: 2px solid var(--forest); }
+  .btn.primary { background: var(--forest); color: var(--cream); }
+  .btn.ghost { color: var(--forest); }
+  .eyebrow { font-size: 13px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: #8a6a2c; margin-bottom: 10px; }
+  section { padding: 72px 0; }
+  .lead { font-size: 18px; color: var(--muted); max-width: 56ch; }
+
+  /* nav */
+  nav { position: sticky; top: 0; z-index: 5; background: rgba(251,246,236,.94); backdrop-filter: blur(6px); border-bottom: 1px solid var(--line); }
+  nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 68px; gap: 16px; }
+  .logo { display: flex; align-items: center; gap: 10px; font-family: Fraunces, serif; font-weight: 700; font-size: 20px; color: var(--forest); white-space: nowrap; }
+  .links { display: flex; align-items: center; gap: 26px; font-size: 15px; font-weight: 500; }
+  .links .btn { padding: 9px 18px; font-size: 14px; }
+
+  /* hero */
+  .hero { padding: 64px 0 72px; }
+  .hero .wrap { display: grid; grid-template-columns: 1.1fr .9fr; gap: 48px; align-items: center; }
+  .hero h1 { font-size: 54px; }
+  .hero .lead { margin-top: 18px; }
+  .ctas { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+  .trust { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-top: 26px; font-size: 14px; color: var(--muted); }
+  .trust span::before { content: ""; display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--sunny); margin-right: 8px; vertical-align: 1px; }
+  .photo { aspect-ratio: 4 / 5; border-radius: 28px 28px 28px 120px; background: linear-gradient(160deg, #3a6d5f, var(--forest-2)); position: relative; overflow: hidden; display: flex; align-items: flex-end; padding: 24px; color: var(--cream); }
+  .photo svg { position: absolute; right: -30px; top: -20px; opacity: .18; }
+  .photo p { position: relative; font-size: 14px; opacity: .9; max-width: 30ch; }
+  .sticker { position: absolute; top: 22px; left: 22px; background: var(--sunny); color: var(--ink); font-weight: 600; font-size: 13px; border-radius: 999px; padding: 6px 12px; }
+
+  /* how */
+  .how { background: #fff; }
+  .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 36px; }
+  .step .n { width: 40px; height: 40px; border-radius: 50%; background: var(--cream); color: var(--forest); font-family: Fraunces, serif; font-weight: 700; display: grid; place-items: center; font-size: 18px; margin-bottom: 14px; border: 2px solid var(--sunny); }
+  .step h3 { font-size: 21px; margin-bottom: 6px; }
+  .step p { color: var(--muted); }
+
+  /* services */
+  .cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin-top: 36px; }
+  .card { background: #fff; border-radius: 20px; padding: 24px; box-shadow: 0 1px 2px rgba(31,42,39,.05), 0 10px 26px rgba(31,42,39,.06); display: flex; flex-direction: column; }
+  .card .kind { font-size: 12px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: #8a6a2c; }
+  .card h3 { font-size: 21px; margin-top: 6px; }
+  .card p { color: var(--muted); font-size: 15px; margin-top: 8px; flex: 1; }
+  .card .price { font-family: Fraunces, serif; font-size: 30px; color: var(--forest); margin-top: 16px; }
+  .card .price small { font-family: Inter, sans-serif; font-size: 14px; color: var(--muted); font-weight: 400; }
+  .small-print { margin-top: 18px; font-size: 14px; color: var(--muted); }
+
+  /* why */
+  .why .wrap { display: grid; grid-template-columns: .9fr 1.1fr; gap: 56px; align-items: center; }
+  .map { aspect-ratio: 1; border-radius: 50%; background: radial-gradient(circle at center, #fff 0 22%, #f6ead0 22% 46%, #efdcb4 46% 70%, transparent 70%); position: relative; display: grid; place-items: center; }
+  .map .pin { background: var(--forest); color: var(--cream); font-weight: 600; font-size: 14px; border-radius: 999px; padding: 8px 14px; }
+  .map .r { position: absolute; bottom: 14%; font-size: 13px; color: #8a6a2c; font-weight: 600; }
+  .ticks { list-style: none; margin-top: 22px; display: grid; gap: 14px; }
+  .ticks li { padding-left: 34px; position: relative; }
+  .ticks li::before { content: "✓"; position: absolute; left: 0; top: 1px; width: 22px; height: 22px; border-radius: 50%; background: var(--forest); color: var(--cream); font-size: 13px; display: grid; place-items: center; }
+  .ticks b { color: var(--forest); }
+
+  /* about */
+  .about { background: var(--forest); color: var(--cream); }
+  .about .wrap { display: grid; grid-template-columns: 220px 1fr; gap: 40px; align-items: center; }
+  .about h2 { color: var(--cream); font-size: 34px; }
+  .about p { margin-top: 12px; font-size: 17px; opacity: .92; max-width: 60ch; }
+  .face { width: 220px; height: 220px; border-radius: 50%; background: #3a6d5f; border: 6px solid var(--sunny); display: grid; place-items: center; text-align: center; font-size: 13px; padding: 30px; opacity: .95; }
+
+  /* faq */
+  .faq h2 { font-size: 34px; }
+  details { background: #fff; border-radius: 16px; padding: 18px 22px; margin-top: 12px; }
+  summary { font-weight: 600; cursor: pointer; list-style: none; display: flex; justify-content: space-between; gap: 16px; }
+  summary::after { content: "+"; color: var(--forest); font-size: 20px; line-height: 1; }
+  details[open] summary::after { content: "–"; }
+  details p { margin-top: 10px; color: var(--muted); }
+
+  /* contact */
+  .contact .box { background: #fff; border-radius: 28px; padding: 44px; display: grid; grid-template-columns: .9fr 1.1fr; gap: 44px; box-shadow: 0 10px 30px rgba(31,42,39,.07); }
+  .contact h2 { font-size: 36px; }
+  form { display: grid; gap: 14px; }
+  label { font-size: 14px; font-weight: 600; display: grid; gap: 6px; }
+  input, select, textarea { font: 15px Inter, sans-serif; padding: 12px 14px; border-radius: 12px; border: 1.5px solid var(--line); background: var(--cream); color: var(--ink); }
+  textarea { min-height: 96px; resize: vertical; }
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  form .btn { justify-self: start; cursor: pointer; }
+  .reply { font-size: 14px; color: var(--muted); }
+
+  footer { padding: 36px 0 48px; font-size: 14px; color: var(--muted); }
+  footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; border-top: 1px solid var(--line); padding-top: 28px; }
+
+  @media (max-width: 900px) {
+    .links a:not(.btn) { display: none; }
+    .hero .wrap, .why .wrap, .contact .box, .about .wrap { grid-template-columns: 1fr; }
+    .hero h1 { font-size: 40px; }
+    .photo { aspect-ratio: 4 / 3; border-radius: 24px 24px 24px 80px; }
+    .steps { grid-template-columns: 1fr; gap: 22px; }
+    .cards { grid-template-columns: 1fr 1fr; }
+    .map { max-width: 320px; margin: 0 auto; }
+    .face { width: 160px; height: 160px; padding: 20px; font-size: 12px; }
+    .contact .box { padding: 28px 22px; }
+    section { padding: 56px 0; }
+  }
+  @media (max-width: 560px) {
+    .wrap { padding: 0 18px; }
+    .logo { font-size: 17px; }
+    .hero { padding: 40px 0 52px; }
+    .hero h1 { font-size: 34px; }
+    .cards { grid-template-columns: 1fr; }
+    .two { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="logo" href="#top">
+      <svg width="34" height="34" viewBox="0 0 42 42" aria-hidden="true"><path d="M4 38V18A14 14 0 0 1 18 4h20" fill="none" stroke="#2F5D50" stroke-width="6" stroke-linecap="round"/><circle cx="27" cy="27" r="5" fill="#F2A541"/><circle cx="19" cy="20" r="2.6" fill="#F2A541"/><circle cx="25" cy="16.5" r="2.6" fill="#F2A541"/><circle cx="31" cy="18" r="2.6" fill="#F2A541"/><circle cx="34" cy="23.5" r="2.6" fill="#F2A541"/></svg>
+      Round the Corner Pets
+    </a>
+    <div class="links">
+      <a href="#services">Walks and visits</a>
+      <a href="#why">Why local</a>
+      <a href="#faq">Questions</a>
+      <a class="btn primary" href="#contact">Meet and greet</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">Dog walking and pet visits · Bromley</div>
+      <h1>Your local dog walker, just round the corner.</h1>
+      <p class="lead">Friendly walks and home visits from a neighbour your pets will know by name. On foot, small groups, and a photo after every visit.</p>
+      <div class="ctas">
+        <a class="btn primary" href="#contact">Book a free meet and greet</a>
+        <a class="btn ghost" href="#services">See prices</a>
+      </div>
+      <div class="trust">
+        <span>Fully insured</span>
+        <span>DBS checked</span>
+        <span>Pet first aid trained</span>
+      </div>
+    </div>
+    <div class="photo">
+      <span class="sticker">A photo after every walk</span>
+      <svg width="320" height="320" viewBox="0 0 42 42" aria-hidden="true"><circle cx="27" cy="27" r="5" fill="#FBF6EC"/><circle cx="19" cy="20" r="2.6" fill="#FBF6EC"/><circle cx="25" cy="16.5" r="2.6" fill="#FBF6EC"/><circle cx="31" cy="18" r="2.6" fill="#FBF6EC"/><circle cx="34" cy="23.5" r="2.6" fill="#FBF6EC"/></svg>
+      <p>Your photo goes here: you out on a walk with a happy dog in a Bromley park.</p>
+    </div>
+  </div>
+</header>
+
+<section class="how">
+  <div class="wrap">
+    <div class="eyebrow">How it works</div>
+    <h2 style="font-size:36px">Three easy steps</h2>
+    <div class="steps">
+      <div class="step"><div class="n">1</div><h3>Meet and greet</h3><p>I pop round, free, to meet you and your pet, learn their routine and talk through keys.</p></div>
+      <div class="step"><div class="n">2</div><h3>Walks or visits</h3><p>Pick the days that suit you. Regular weekly slots or just while you're away.</p></div>
+      <div class="step"><div class="n">3</div><h3>A photo and a note</h3><p>After every walk or visit you get a photo and a few lines on how it went.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="eyebrow">Walks and visits</div>
+    <h2 style="font-size:36px">Simple prices, no surprises</h2>
+    <div class="cards">
+      <div class="card"><div class="kind">Dog walking</div><h3>Group walk</h3><p>An hour out with up to four friendly dogs. Picked up and dropped home.</p><div class="price">£16 <small>/ 1 hour</small></div></div>
+      <div class="card"><div class="kind">Dog walking</div><h3>Solo walk</h3><p>An hour, just your dog. For nervous, young or older dogs who like it quiet.</p><div class="price">£22 <small>/ 1 hour</small></div></div>
+      <div class="card"><div class="kind">Puppies</div><h3>Puppy visit</h3><p>A short walk or garden play, a toilet break and lunch for little ones.</p><div class="price">£13 <small>/ 30 min</small></div></div>
+      <div class="card"><div class="kind">Pet sitting</div><h3>Pop-in visit</h3><p>Feeding, fresh water, litter and a cuddle at your home while you're away. Cats and small pets too.</p><div class="price">£14 <small>/ 30 min</small></div></div>
+    </div>
+    <p class="small-print">Second dog from the same home on a group walk: £12. Two pop-in visits a day: £24.</p>
+  </div>
+</section>
+
+<section class="why" id="why">
+  <div class="wrap">
+    <div class="map">
+      <span class="pin">Bromley</span>
+      <span class="r">Everywhere within a short walk</span>
+    </div>
+    <div>
+      <div class="eyebrow">Why local is better</div>
+      <h2 style="font-size:36px">A neighbour, not a company</h2>
+      <ul class="ticks">
+        <li><b>On foot, never a van.</b> Your dog walks from your door to the park and back.</li>
+        <li><b>Small groups.</b> Never more than four dogs, so every one gets attention.</li>
+        <li><b>The same face every time.</b> No strangers with your keys.</li>
+        <li><b>Close by.</b> I live a few streets away, so I'm there on time, and in a pinch.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="about">
+  <div class="wrap">
+    <div class="face">Your photo here: a friendly smile</div>
+    <div>
+      <h2>Hello, I'm your neighbour in Bromley</h2>
+      <p>I've loved dogs all my life, and I know these parks and streets like the back of my hand. I started Round the Corner Pets so local dogs get a proper walk while their people are at work, and so cats and small pets have a friendly face when their family's away.</p>
+      <p>I keep my numbers small on purpose. Your pet won't be one of a crowd.</p>
+    </div>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="wrap">
+    <div class="eyebrow">Questions</div>
+    <h2>Good to know</h2>
+    <details open><summary>Which areas do you cover?</summary><p>Bromley, within a short walk of where I live. Send me your street and I'll tell you straight away.</p></details>
+    <details><summary>Are you insured?</summary><p>Yes: public liability insurance plus cover for the pets and keys in my care. I'm DBS checked and pet first aid trained too.</p></details>
+    <details><summary>How do my keys stay safe?</summary><p>Keys are labelled with a code, never your address, and kept locked away. A key safe works too.</p></details>
+    <details><summary>My dog doesn't get on with other dogs. Can you still help?</summary><p>Of course. Book solo walks and your dog gets me all to themselves.</p></details>
+    <details><summary>What if I need to cancel?</summary><p>Free with 24 hours' notice. Later than that, the walk is charged.</p></details>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="box">
+      <div>
+        <div class="eyebrow">Free meet and greet</div>
+        <h2>Let's meet your pet</h2>
+        <p class="lead" style="margin-top:14px">Tell me a little about them and I'll get back to you within a day to find a time to pop round.</p>
+      </div>
+      <form>
+        <div class="two">
+          <label>Your name<input placeholder="Sam Taylor"></label>
+          <label>Phone<input placeholder="07700 900123"></label>
+        </div>
+        <div class="two">
+          <label>Your street<input placeholder="e.g. Tweedy Road"></label>
+          <label>Your pet's name<input placeholder="e.g. Biscuit"></label>
+        </div>
+        <label>What would help?
+          <select><option>Regular walks</option><option>Solo walks</option><option>Puppy visits</option><option>Pop-in visits while I'm away</option><option>Not sure yet</option></select>
+        </label>
+        <label>Anything I should know?<textarea placeholder="Breed, age, any quirks…"></textarea></label>
+        <button class="btn primary" type="button">Ask for a meet and greet</button>
+        <p class="reply">I reply within a day, usually much sooner.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Round the Corner Pets · Dog walking and pet visits in Bromley</span>
+    <span>Fully insured · DBS checked</span>
+  </div>
+</footer>
+
+</body>
+</html>
