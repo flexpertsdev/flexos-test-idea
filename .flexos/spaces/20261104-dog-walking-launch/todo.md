@@ -10,8 +10,9 @@ related: [.flexos/docs/01-project/]
 - [x] Where the business works: Bromley, on foot
 - [ ] What pet sitting means: visits, overnight, or at home
 - [ ] Which streets or neighbourhoods are in reach (the area on the website)
-- [ ] The business name
+- [x] Draw three brands to pick from (`01-brand/brand-board.html`)
+- [ ] Pick the brand: name, look, line
 - [ ] Walks in detail: length, group or solo
 - [ ] Prices
-- [ ] The look of the website
+- [ ] The look of the website (from the brand)
 - [ ] Draw the home page

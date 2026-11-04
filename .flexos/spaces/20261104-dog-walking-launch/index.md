@@ -8,15 +8,19 @@ related: [.flexos/docs/01-project/]
 
 ## What this is
 The owner is starting a dog walking and pet sitting business from scratch in Bromley and needs a website for it. This
-conversation shapes the business (where, what, how much) and then the website.
+conversation shapes the business (where, what, how much), its brand and then the website.
 
 ## Decided
 - Two services to start: dog walking and pet sitting.
 - Where: Bromley, the owner's own local area only.
 - On foot, no car: every walk and visit is within walking distance of home, and dogs are walked locally, never driven.
-- The business needs a website.
+- The business needs a website, and a brand first; the owner is not creative, so Flexi proposes and they pick.
+
+## Topics
+- `01-brand/`: the name, the look and the line; three drawn on a board, waiting for a pick.
 
 ## Next
-- What pet sitting means here: visits at the owner's house, staying over, or pets at the walker's home. Flexi's pick:
-  visits (fits on foot, no council licence needed).
-- Then the name, walk details and prices.
+- The owner picks a brand (topic `01-brand`).
+- Still open: what pet sitting means (visits, overnight, or at home). Flexi's pick: visits. Assumed for now on the
+  brand board ("home visits"), to confirm.
+- Then the website: its pages, starting with the home page drawn.
