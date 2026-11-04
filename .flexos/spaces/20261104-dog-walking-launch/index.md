@@ -20,9 +20,9 @@ conversation shapes the business (where, what, how much), its brand and then the
 
 ## Topics
 - `01-brand/`: colours chosen; the name is waiting for a yes.
-- `02-website/`: the home page drawn, waiting for a yes.
+- `02-website/`: the home page, mockup v1 in its `files/`, waiting for a yes.
 
 ## Next
 - The owner's yes to the home page, which also settles the name (Round the Corner Pets) and, for now, the prices.
 - Still open: what pet sitting means. Pop-in visits are on the home page; to confirm.
-- Then build the home page and decide where meet and greet requests go.
+- Then the agreed page goes into the website's brief and a build job builds it; decide where meet and greet requests go.

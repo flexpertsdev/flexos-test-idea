@@ -8,7 +8,7 @@ related: [.flexos/docs/02-brand/, .flexos/docs/01-project/]
 
 ## What this is
 The owner asked for help creating a brand and a website and said they are not creative. So Flexi proposes and the
-owner picks: three whole brands (name, logo idea, colours, fonts, a line), drawn side by side in `brand-board.html`.
+owner picks: three whole brands (name, logo idea, colours, fonts, a line), drawn side by side in `files/brand-board.html`.
 What is picked moves to the Library (`docs/02-brand/01-overview.md`); this folder keeps only the board.
 
 ## The three on the board

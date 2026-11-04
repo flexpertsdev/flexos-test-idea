@@ -21,7 +21,8 @@ where this document says, keep each one's header true, and never leave anything 
       index.md                what it is for, where it stands (keep it true)
       brief/
         01-design/            index.md (the look in words), design-system.html, images/
-        02-pages/NN-<page>/   index.md (name, path:, what it shows, the one thing to do) + page.html (its drawing)
+        02-pages/NN-<page>/   index.md (name, path:, what it shows, the one thing to do) + page.html (the agreed
+                              prototype a build job builds from); written once the page is agreed, never a draft
         03-features/NN-<feature>/  index.md (what it does, its rules, the pages it uses)
         04-flows/NN-<flow>/   index.md (the steps, page by page)
         05-data/index.md      what it keeps: each table, its fields
@@ -55,13 +56,16 @@ related: [.flexos/apps/web/brief/04-flows/01-onboarding/, .flexos/connections/st
 2. **A new turn of the talk is a topic, not a new space.** When the talk turns to something that will take more than a
    message or two, make `NN-<name>/index.md` inside the space and put what you make for it there. If it has nothing to
    do with the space, start the topic and ask: keep it here, or its own space?
-3. **Things live where they belong; spaces only point at them.** A page is drawn in `apps/web/brief/02-pages/`, a fact
-   about the business goes in the Library, a service in `connections/`. The space or topic lists them in `related:`.
-   Never copy a thing into a space.
+3. **Things live where they belong; spaces only point at them.** An agreed page goes in `apps/web/brief/02-pages/`, a
+   fact about the business in the Library, a service in `connections/`. The space or topic lists them in `related:`.
+   Never copy a finished thing into a space. Drafts are the exception: they are the conversation's own (rule 5).
 4. **Higher feeds lower.** Read the Library and the app's brief before you answer about them; a topic's notes override
    the space's, the space's override the Library's, for that conversation only.
-5. **Draw before you build.** A page is drawn first as `page.html` (one file, its styles inside, real words, no lorem
-   ipsum), the person says yes, then it is built in `flexboxes/`. A change to a page redraws it first.
+5. **Draw before you build, and draft in the space.** Mockups are iterated in the space's (or topic's) `files/`:
+   `home-v1.html`, `home-v2.html`, … (one file each, styles inside, real words, no lorem ipsum). When the person says
+   yes, write the page properly into the brief (`02-pages/NN-<page>/index.md` and the final `page.html`, plus its
+   features and flows), and a build job builds it in `flexboxes/` from the brief alone. A change to a live page is
+   drafted in a space the same way, then the brief is rewritten and rebuilt.
 6. **Notes are kept true, not appended.** Rewrite a space's or topic's `index.md` whole when something is decided:
    `## What this is`, `## Decided`, `## Next`. The to-do is a checklist (`- [ ]`), ticked when done.
 7. **Log every turn** in `.flexos/messages/<YYYY-MM>.md`: `### <time> · <who> · in <space>[/<topic>]`, then the words.
@@ -75,8 +79,8 @@ The person describes their business. In the first few turns, without a questionn
 - make the space for this conversation (rule 1) and log the turn;
 - write the Library's `01-project/01-overview.md` and `02-fact-sheet.md` from what they said (mark guesses `(guess)`);
 - ask the one thing you most need next.
-As the talk goes on: a look → `apps/web/brief/01-design/`; a page → `02-pages/NN-<page>/` drawn; a feature or flow →
-its folder; a service → `connections/<service>/`; a plan → `docs/plans/`. Each time, the space or the topic you are in
+As the talk goes on: a look → `apps/web/brief/01-design/`; a page → mockups in the topic's `files/`, then, once
+agreed, its brief in `02-pages/NN-<page>/`; a feature or flow → its folder once agreed; a service → `connections/<service>/`; a plan → `docs/plans/`. Each time, the space or the topic you are in
 gets it in `related:`.
 
 ## Bringing in an existing project from a zip (test 2)
