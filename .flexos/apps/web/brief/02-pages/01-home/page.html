@@ -25,7 +25,7 @@
   nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 68px; gap: 16px; }
   .logo { display: flex; align-items: center; gap: 10px; font-family: Fraunces, serif; font-weight: 700; font-size: 20px; color: var(--forest); white-space: nowrap; }
   .links { display: flex; align-items: center; gap: 26px; font-size: 15px; font-weight: 500; }
-  .links .btn { padding: 9px 18px; font-size: 14px; }
+  .links .btn { padding: 9px 18px; font-size: 14px; white-space: nowrap; }
 
   /* hero */
   .hero { padding: 64px 0 72px; }
@@ -35,7 +35,7 @@
   .ctas { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
   .trust { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-top: 26px; font-size: 14px; color: var(--muted); }
   .trust span::before { content: ""; display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--sunny); margin-right: 8px; vertical-align: 1px; }
-  .photo { aspect-ratio: 4 / 5; border-radius: 28px 28px 28px 120px; background: linear-gradient(160deg, #3a6d5f, var(--forest-2)); position: relative; overflow: hidden; display: flex; align-items: flex-end; padding: 24px; color: var(--cream); }
+  .photo { aspect-ratio: 4 / 5; border-radius: 28px 28px 28px 120px; background: linear-gradient(160deg, #3a6d5f, var(--forest-2)); position: relative; overflow: hidden; display: flex; align-items: flex-end; justify-content: flex-end; text-align: right; padding: 24px; color: var(--cream); }
   .photo svg { position: absolute; right: -30px; top: -20px; opacity: .18; }
   .photo p { position: relative; font-size: 14px; opacity: .9; max-width: 30ch; }
   .sticker { position: absolute; top: 22px; left: 22px; background: var(--sunny); color: var(--ink); font-weight: 600; font-size: 13px; border-radius: 999px; padding: 6px 12px; }
@@ -103,14 +103,17 @@
     .photo { aspect-ratio: 4 / 3; border-radius: 24px 24px 24px 80px; }
     .steps { grid-template-columns: 1fr; gap: 22px; }
     .cards { grid-template-columns: 1fr 1fr; }
-    .map { max-width: 320px; margin: 0 auto; }
+    .map { width: 100%; max-width: 300px; margin: 0 auto; }
     .face { width: 160px; height: 160px; padding: 20px; font-size: 12px; }
     .contact .box { padding: 28px 22px; }
     section { padding: 56px 0; }
   }
   @media (max-width: 560px) {
     .wrap { padding: 0 18px; }
-    .logo { font-size: 17px; }
+    .logo { font-size: 15px; gap: 8px; }
+    .logo svg { width: 28px; height: 28px; }
+    nav .wrap { gap: 10px; }
+    .links .btn { padding: 8px 12px; font-size: 13px; }
     .hero { padding: 40px 0 52px; }
     .hero h1 { font-size: 34px; }
     .cards { grid-template-columns: 1fr; }
