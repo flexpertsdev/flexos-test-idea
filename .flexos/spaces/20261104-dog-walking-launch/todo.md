@@ -7,9 +7,11 @@ related: [.flexos/docs/01-project/]
 ---
 
 - [x] Write down the business as it stands (overview, fact sheet)
-- [ ] Where the business works (town or area)
+- [x] Where the business works: Bromley, on foot
+- [ ] What pet sitting means: visits, overnight, or at home
+- [ ] Which streets or neighbourhoods are in reach (the area on the website)
 - [ ] The business name
-- [ ] Each service in detail: walk lengths, group or solo, sitting at home or overnight
+- [ ] Walks in detail: length, group or solo
 - [ ] Prices
 - [ ] The look of the website
 - [ ] Draw the home page
