@@ -44,16 +44,21 @@ flexboxes/web/                 the website's code (deploys on its own); FLEXOS.m
 flexboxes/agents/              the agents' code
 ```
 
-A project with no website of its own (the person keeps one elsewhere) has no `apps/web/` and no `flexboxes/web/`:
-the site is a connection, and the Library's `05-the-website/` says what it is and what we may change.
+**Which file opens a folder.** A numbered Library topic folder (`docs/01-project/`, `docs/02-brand/`) opens on
+`01-overview.md`. A folder that holds one thing (the design system, the logo, the photos, a page, a feature, a space, a
+topic, a connection, an agent) opens on `index.md`.
 
-Every `.md` under `.flexos/` starts with this header, kept true:
+**Every project keeps its `web` app from birth.** One whose owner keeps a website elsewhere still has it: a one-page
+door at its own address, filled from the Library, and the real site is a connection (`connections/<its host>/`), with
+the Library's `05-the-website/` saying what it is and what we may change.
+
+Every `.md` under `.flexos/` starts with this header, kept true (a `todo.md` too, `type: todo`):
 
 ```
 ---
 name: Sign up              # in words, never a file name
 details: One line on what it is
-type: doc | page | feature | flow | space | topic | connection | plan | source | build | picture | skill | template
+type: doc | page | feature | flow | space | topic | todo | connection | plan | source | build | picture | skill | template
 status: active             # or archived (never delete: archive); a build: live | failed
 related: [.flexos/connections/stripe/]   # what it works on: finals and things that live elsewhere, never drafts
 from: .flexos/spaces/20261103-the-website/01-home-page/   # on a final: the topic it was picked in
@@ -68,9 +73,9 @@ its body the thing in words.
 
 1. **A conversation is a space.** The first message makes one: `.flexos/spaces/<today>-<2-4 words>/`. Name it for what
    it is about ("Christmas orders"), never the person's sentence.
-2. **What the talk turns to is a topic.** When it turns to something that will take more than a message or two, make
-   `NN-<name>/index.md` inside the space. If it has nothing to do with the space, start the topic and ask: keep it
-   here, or its own space?
+2. **What the talk turns to is a topic.** One chat is one space, however far it wanders; when it turns to something
+   that will take more than a message or two, make `NN-<name>/index.md` inside the space. Never ask whether to keep
+   it here or start a new space: a new space is only ever a new chat the person starts.
 3. **Drafts live in the topic that made them.** Takes, palettes, page drafts, email drafts, photo takes: in the topic's
    `files/`, named for what they are (`home-draft-1.html`, `home-draft-2-shorter.html`, `take-2-house-and-lead.png.md`),
    one file each, styles inside, real words, never lorem ipsum. Never linked from anywhere; the topic's notes say

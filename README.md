@@ -1,10 +1,14 @@
-# FlexOS shape test
+# Round the Corner Pets (working name)
 
-Two tests of the FlexOS folder system, run in Claude Code with this repo as the working folder:
+A dog walking and pet sitting business in Bromley, kept the FlexOS way. This is the repo's map.
 
-1. **A new project:** start a session and describe a business ("I want to start a dog-sitting business in Leeds").
-   Talk as you would to Flexi. After each turn, look at what it wrote and where under `.flexos/`.
-2. **Bring in a project:** put a website zip in `inbox/`, then say "I brought in my website, it's in inbox/".
-   Watch it unzip, scan, write the Library and the brief, and get you to "I can work on this".
+- **`.flexos/`**: everything about the business and its apps, in words.
+  - `docs/`: the Library, what the business is (facts, services, prices, brand, plans, sources).
+  - `apps/`: what each app is: `web/` (the website's brief, its builds), `agents/`.
+  - `connections/`: the services it uses, their keys by name.
+  - `spaces/`: the conversations, one folder each, its topics inside with their drafts.
+  - `messages/`: every message, both sides, month by month.
+- **`flexboxes/`**: the code, one folder per app (`web/`, `agents/`), each deploying on its own.
+- **`inbox/`**: where something brought in (a zip) is dropped before it is read.
 
-`CLAUDE.md` is the whole system: the shape, the header every file wears, the rules, and both procedures.
+`CLAUDE.md` is how Flexi works here: the shape, the header every file wears, and the rules.

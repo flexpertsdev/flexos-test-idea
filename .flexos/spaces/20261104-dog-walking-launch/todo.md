@@ -1,7 +1,7 @@
 ---
 name: Starting the dog walking business, to-do
 details: What is left to settle before the website goes live
-type: space
+type: todo
 status: active
 related: [.flexos/docs/01-project/, .flexos/docs/02-brand/, .flexos/docs/plans/01-launch.md, .flexos/apps/web/]
 ---
