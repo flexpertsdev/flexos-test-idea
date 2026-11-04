@@ -3,7 +3,7 @@ name: Starting the dog walking business, to-do
 details: What is left to settle before the website goes live
 type: space
 status: active
-related: [.flexos/docs/01-project/, .flexos/docs/02-brand/, .flexos/docs/plans/launch.md, .flexos/apps/web/]
+related: [.flexos/docs/01-project/, .flexos/docs/02-brand/, .flexos/docs/plans/01-launch.md, .flexos/apps/web/]
 ---
 
 - [x] Write down the business as it stands (overview, fact sheet)
@@ -16,8 +16,8 @@ related: [.flexos/docs/01-project/, .flexos/docs/02-brand/, .flexos/docs/plans/l
 - [ ] Pick the name and the line
 - [ ] Check the suggested services and prices
 - [x] The look of the website (from the brand)
-- [x] Draw the home page (mockup v1, in the space)
-- [ ] The owner's yes to the home page mockup (`02-website/files/home-v1.html`)
+- [x] Draw the home page (draft 1)
+- [ ] The owner's yes to the home page (draft 1, in `02-website/files/`)
 - [ ] Write the home page's final brief and prototype into `apps/web/brief/`
 - [ ] A build job builds it from the brief and puts it live
 - [ ] Where meet and greet requests go

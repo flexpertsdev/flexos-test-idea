@@ -1,9 +1,9 @@
 ---
-name: Pricing
+name: Prices
 details: Suggested prices, all to confirm; from typical rates for south-east London, not researched yet
 type: doc
 status: active
-related: [.flexos/docs/01-project/03-products-and-services.md]
+related: [.flexos/docs/01-project/03-services.md]
 ---
 
 Every price here is a suggestion (guess) until the owner agrees it.

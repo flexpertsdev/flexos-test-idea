@@ -10,7 +10,7 @@ related: [.flexos/docs/01-project/, .flexos/docs/02-brand/, .flexos/spaces/20261
 Everything between today and the first walk, in the order Flexi would do it. Nothing here has started except the brand.
 
 ## Steps
-1. - [ ] **Decide the services and prices** (`01-project/03` and `04` are suggestions to check).
+1. - [ ] **Decide the services and prices** (`01-project/03-services.md` and `04-prices.md` are suggestions to check).
 2. - [ ] **Pick the name**, then check it is free: a web address, Instagram and Facebook.
 3. - [ ] **Get insured**: pet business insurance covering public liability and the pets and keys in your care (guess:
    around £100 to £200 a year).

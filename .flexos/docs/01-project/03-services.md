@@ -1,9 +1,9 @@
 ---
-name: Products and services
+name: Services
 details: What the business offers; walking is agreed, the shape of each service is suggested
 type: doc
 status: active
-related: [.flexos/docs/01-project/04-pricing.md]
+related: [.flexos/docs/01-project/04-prices.md]
 ---
 
 All on foot, within walking distance of the owner's home in Bromley.

@@ -1,9 +1,9 @@
 ---
 name: Brand
-details: How the business looks and sounds; the colours are chosen, the name is not yet
+details: Warm and neighbourly; the colours are picked, the name and the logo are not yet
 type: doc
 status: active
-related: [.flexos/spaces/20261104-dog-walking-launch/01-brand/]
+from: .flexos/spaces/20261104-dog-walking-launch/01-brand/
 ---
 
 ## The feel
@@ -11,9 +11,11 @@ Warm, neighbourly and trustworthy: a local person your pets know by name, just r
 (guess, from the look the owner liked).
 
 ## Name and line
-Not chosen yet. The name that came with the chosen colours is **Round the Corner Pets**, line "Just round the corner."
-The three brands it was picked from are on the board in the space's brand topic.
+Not picked yet. Flexi's suggestion: **Round the Corner Pets**, "Just round the corner."
+
+## Logo
+Not made yet.
 
 ## In this folder
-- `02-style-guide.md`: the colours (chosen), the fonts, the logo and how we write.
-- `03-design-system.html`: the same, drawn: colours, type, buttons and a card.
+- `02-style-guide.md`: how we write.
+- `03-design-system/`: the colours (picked), the type, buttons and cards; `design-system.html` draws them.

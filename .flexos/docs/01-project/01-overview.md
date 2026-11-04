@@ -21,12 +21,12 @@ Pet owners in the owner's part of Bromley who are out at work all day, go away, 
 
 ## Where it stands
 An idea, not trading yet (guess). Colours chosen; no name, prices or website yet. The steps to opening are in the
-Library's plan `plans/launch.md`.
+Library's plan `plans/01-launch.md`.
 
 ## In this folder
 - `02-fact-sheet.md`: the facts, one line each.
-- `03-products-and-services.md`: what is offered.
-- `04-pricing.md`: what it costs.
+- `03-services.md`: what is offered.
+- `04-prices.md`: what it costs.
 - `05-audience.md`: who it is for.
 
 ## Not known yet
